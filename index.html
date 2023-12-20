@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/pacman.png" type="image/x-icon">
+    <title>The Pacquiao Pac-Off</title>
+  </head>
+
+  <body>
+
+    <div class="game-container">
+      <h1 class="game-name">The Pacquiao Pac-Off</h1>
+      <p>
+        <span>Score: </span>
+        <span id="scoreUpdate">0</span>
+      </p>
+
+      <canvas></canvas>
+
+      <div id="instructionsPanel" class="instructions-panel">
+        <p>Instructions:</p>
+        <p>You are collecting boxing gloves for survival, collect all the boxing gloves to win the game</p>
+        <p>Avoid collision with enemies at all
+          cost or you will lose.</p>
+        <p>Use the following keys for movement: W for up, A for left, S for down, D for right.</p>
+        <p>Click Play button to Start the game.</p>
+        <p>Click Pause button to Pause the Game, click Resume to start the game again.</p>
+        <p>Click Restart button if you want to restart.</p>
+        <p>Click Quit button to Quit the game.</p>
+      </div>
+
+
+      <div class="button-container">
+        <button id="playButton">Play</button>
+        <button id="pauseButton" style="display: none;">Pause</button>
+        <button id="resumeButton" style="display: none;">Resume</button>
+        <button id="restartButton" style="display: none;">Restart</button>
+        <button id="quitButton" style="display: none;">Quit</button>
+        <a href="
+          https://kirksanchez.blogspot.com/2023/08/building-pacman-clone-game-journey-into.html" target="_blank"><button
+            id="blogButton" style="display: none;">Blog</button></a>
+      </div>
+    </div>
+
+    <audio id="gameAudio" controls loop>
+      <source src="sounds/sometimes-when-we-touch.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="index.js" defer></script>
+
+
+  </body>
+
+</html>
